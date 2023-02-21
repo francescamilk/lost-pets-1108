@@ -1,1 +1,8 @@
-CRUD verb, controller#action, ActiveRecord method
+CRUD verb, HTTP verb, controller#action, ActiveRecord method
+Read (all), GET, resources#index, Resource.all
+Read (one), GET, resources#show, Resource.find(id)
+Create (form), GET, resources#new, Resource.new
+Create (save), POST, resources#create, Resource.save
+Update (form), GET, resources#edit, Resource.find(id)
+Update (save), PATCH, resources#udpate, Resource.update(params)
+Delete, DELETE, resources#destroy, Resource.find(id) > Resource.destroy
