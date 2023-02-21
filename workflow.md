@@ -2,8 +2,8 @@
 
 0. *Map the user actions*
     As a user, I can...
-    [ ] see an index of all the found pets
-    [ ] see details about one found pet (when and where it was found)
+    [X] see an index of all the found pets
+    [X] see details about one found pet (when and where it was found)
     [ ] add a pet I found
     [ ] update a pet
     [ ] delete a pet
