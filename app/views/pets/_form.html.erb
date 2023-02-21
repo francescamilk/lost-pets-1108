@@ -1,0 +1,6 @@
+<%= simple_form_for @pet do |f| %>
+    <%= f.input :location %>
+    <%= f.input :species, as: :select, collection: Pet::SPECIES  %>
+    <%= f.input :breed %>
+    <%= f.submit %>
+<% end %>

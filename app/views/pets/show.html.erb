@@ -1,6 +1,7 @@
 <h1>Details on <%= @pet.species %></h1>
 <h3>Found | Where: <%= @pet.location %></h3>
 <h3>Found | When: <%= @pet.found_when %></h3>
+<h5>This <%= @pet.species %> is a <%= @pet.breed %></h5>
 
 <%= link_to "Edit", edit_pet_path(@pet) %> |
 <%= link_to "Delete", delete_pet_path(@pet) %>

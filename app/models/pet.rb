@@ -1,8 +1,16 @@
 class Pet < ApplicationRecord
-    SPECIES = ['cat', 'dog', 'rabbit']
+    SPECIES = ['Cat', 'Dog', 'Rabbit']
 
-    validates :location, presence: true
-    validates :species, presence: true, inclusion: { in: Pet::SPECIES }
+    validates :location, :species, :breed, presence: true
+    validates :species, inclusion: { in: Pet::SPECIES }
+
+    before_validation :capitalize_fields
+
+    def capitalize_fields
+        self.location.capitalize
+        self.species.capitalize
+        self.breed.capitalize
+    end
 
     def found_when
         self.created_at.strftime('%A, %b %d')

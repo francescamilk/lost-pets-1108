@@ -4,15 +4,18 @@ Pet.destroy_all
 puts "Creating pets..."
 Pet.create!(
     location: 'Amsterdam',
-    species: 'dog'
+    species: 'Dog',
+    breed: 'Husky'
 )
 
 Pet.create!(
     location: 'Amsterdam',
-    species: 'cat'
+    species: 'Cat',
+    breed: 'Russian Blue'
 )
 
 Pet.create!(
     location: 'Amsterdam',
-    species: 'cat'
+    species: 'Cat',
+    breed: 'European Striped'
 )
